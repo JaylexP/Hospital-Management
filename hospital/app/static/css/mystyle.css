@@ -1,0 +1,67 @@
+/* Carousel */
+.carousel-caption {
+    position: absolute;
+    bottom: 20%;
+}
+
+.background-1 {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Introduction Section */
+#intro-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#intro-text p {
+    font-size: 1.2rem;
+}
+
+#intro-text .btn-primary {
+    margin-bottom: 20px;
+}
+
+/* Card Decks */
+.card-deck .card {
+    margin: 10px;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+/* Sections */
+#departments, #services, #team, #doctors {
+    margin-bottom: 50px;
+}
+
+#departments h1, #services h1, #team h1, #doctors h1 {
+    margin-bottom: 30px;
+}
+
+/* Profile Cards */
+.profile-card img {
+    margin-bottom: 15px;
+}
+
+.profile-card .card-title {
+    margin-bottom: 5px;
+}
+
+.profile-card .card-subtitle {
+    margin-bottom: 10px;
+}
+
+/* General Styles */
+.text-primary {
+    color: #007bff;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container-fluid {
+    padding: 0 15px;
+}

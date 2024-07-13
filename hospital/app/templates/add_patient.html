@@ -1,0 +1,45 @@
+{% include 'base.html' %}
+{% include 'navigation.html' %}
+
+{% block content %}
+{% if error == "no" %}
+<script>
+    alert('Record saved successfully');
+    window.location.href = "{% url 'view_patient' %}";
+</script>
+{% endif %}
+{% if error == "yes" %}
+<script>
+    alert('Invalid form submission, please try again');
+</script>
+{% endif %}
+
+<div class="container">
+    <h2 class="text-center">Add Patient</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <div class="form-group">
+            <label>Patient Name</label>
+            <input type="text" class="form-control" name="name" required>
+        </div>
+        
+        <div class="form-group">
+            <label>Gender</label>
+            <input type="text" class="form-control" name="gender" required>
+        </div>
+        
+        <div class="form-group">
+            <label>Mobile</label>
+            <input type="number" class="form-control" name="mobile" required>
+        </div>
+
+        <div class="form-group">
+            <label>Address</label>
+            <input type="text" class="form-control" name="address" required>
+        </div>
+
+        <input type="submit" value="Submit" class="btn btn-primary">
+    </form>
+</div>
+
+{% endblock %}
